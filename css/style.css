@@ -1,0 +1,162 @@
+/* Google Fonts - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background: #efefef;
+}
+
+header{
+  background-color: #fff;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px 40px;
+  color: #292727;
+
+}
+
+.logo{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  text-shadow: #000 0px 0px 1px;
+  color: rgb(111, 113, 143);
+  gap: 30px;
+  border-bottom: inset 1px rgba(0, 0, 0, 0.5);
+}
+
+.main{
+  margin-top: 20px;
+  text-align: justify;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #4d4d4d;
+}
+
+.main p{
+  margin-bottom: 20px;
+}
+.container {
+  display: flex;
+  align-items: center;
+  max-width: 1400px;
+  width: 100%;
+  padding: 60px 0;
+}
+.slide-container {
+  margin: 0 30px;
+  overflow: hidden;
+}
+.card {
+  background: #fff;
+  border-radius: 8px;
+}
+.card .image-box {
+  height: 300px;
+}
+.card .image-box img {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px 8px 0 0;
+}
+.card .profile-details {
+  display: flex;
+  align-items: center;
+  column-gap: 12px;
+  padding: 15px;
+}
+.card .profile-details img {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+.profile-details .name {
+  font-size: 15px;
+  font-weight: 500;
+}
+.profile-details .job {
+  font-size: 12px;
+  font-weight: 500;
+  color: #4d4d4d;
+}
+
+.swiper-navBtn {
+  color: #000;
+  height: 50px;
+  width: 50px;
+  transform: translateY(-40%);
+  background: #fff;
+  border-radius: 50%;
+}
+.swiper-navBtn::before,
+.swiper-navBtn::after {
+  font-size: 24px;
+}
+
+.swiper-pagination-bullet {
+  background-color: #333;
+}
+
+.btn{
+  position: fixed;
+  right: 5px;
+  bottom: 50px;
+  z-index: 1;
+}
+
+footer{
+  width: 100%;
+  background-color: white;
+  height: 50px;
+  text-align: center;
+  padding: 20px;
+  margin-top: 20px;
+  color: #4d4d4d;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer a{
+  background-color:#efefef;
+  font-size: small;
+  color: #4d4d4d;
+  padding: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  border: solid 1px #efefef;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 768px) {
+  .swiper-navBtn {
+    display: none;
+  }
+
+  header h1{
+    font-size: 20px;
+  }
+
+  .main p{
+    font-size: 14px;
+  }
+
+  footer h4{
+    font-size: small;
+  }
+}
